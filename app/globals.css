@@ -18,4 +18,165 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+.degrade-hero {
+  background: rgb(223, 187, 176);
+  background: linear-gradient(
+    71deg,
+    rgba(223, 187, 176, 1) 0%,
+    rgba(254, 251, 251, 1) 63%,
+    rgba(255, 254, 254, 1) 67%,
+    rgba(229, 200, 192, 1) 93%
+  );
+}
+
+.degrade-plans {
+  background: rgb(255, 247, 247);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 247, 247, 1) 0%,
+    rgba(255, 241, 239, 1) 11%,
+    rgba(254, 234, 229, 1) 31%,
+    rgba(253, 222, 213, 1) 42%,
+    rgba(253, 220, 210, 1) 51%,
+    rgba(253, 210, 197, 1) 70%,
+    rgba(252, 198, 181, 1) 85%,
+    rgba(252, 201, 186, 1) 100%,
+    rgba(254, 235, 231, 1) 100%,
+    rgba(253, 211, 199, 1) 100%
+  );
+}
+
+@media screen and (max-width: 660px) {
+  .hero-main-text  {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .job-companies-logo  {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .how-section-container article {
+    width: 300px;
+    text-align: left;
+  }
+
+  .how-section-container figure {
+    display: none;
+  }
+
+  .banner-iphone {
+    width: 400px;
+  }
+  .banner-iphone-text {
+    width: 400px;
+    padding: 0 30px;
+  }
+
+  .plans-call-toa-action-text {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .max-banner-hero {
+    display: flex;
+    flex-direction: column;
+  }
+  .max-banner-hero-title {
+    gap: 90px;
+    text-align: center;
+  }
+  .max-banner-hero-title {
+    gap: 90px;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .max-banner-hero-title h1 {
+    line-height: 70px;
+  }
+  .max-banner-hero-image {
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 1290px) {
+  .job-companies-title {
+    font-size: 40px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  
+}
+
+@media screen and (max-width: 1030px) {
+  .plan-main-section  {
+    width: 260px;
+    height: 380px;
+  }
+  .plan-main-section:nth-child(odd)  {
+    margin-top: 20px;
+  }
+
+  .plan-main-section:nth-child(even)  {
+    height: 400px !important;
+  }
+
+  .plan-main-section footer div span  {
+    font-size: small;
+  }
+}
+
+
+@media screen and (max-width: 1029px) {
+  .plan-cover  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .plan-main-section  {
+    width: 324px;
+    height: 480px;
+  }
+  .plan-main-section:nth-child(odd)  {
+    width: 324px;
+    height: 480px;
+  }
+
+  .plan-main-section:nth-child(even)  {
+    height: 480px !important;
+  }
+
+  .plan-main-section footer div span  {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .how-section-to-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .how-section-to-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .how-section-to-col figure img {
+    width: 100%;
+  }
+  .how-section-to-col {
+    margin: 0 auto;
+  }
+
+  .how-section-container figure {
+    padding: 0 30px;
+  }
 }
